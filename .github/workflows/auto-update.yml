@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: '15 15 * * 0'
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v2
+      - name: run auto-update script
+        run: bash auto-update.sh
