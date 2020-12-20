@@ -5,9 +5,9 @@ class Xray < Formula
   desc "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration."
   homepage "https://t.me/projectxray"
   # download binary from upstream directly
-  url "https://github.com/XTLS/Xray-core/releases/download/v1.1.3/Xray-macos-64.zip"
-  version "1.1.3"
-  sha256 "e1191b32d33798965a3dfb4c34ee09c778e3bafafa0e55f6f2d46e8bd6f748b9"
+  url "https://github.com/XTLS/Xray-core/releases/download/v1.1.4/Xray-macos-64.zip"
+  version "1.1.4"
+  sha256 "9e12f4b7a18d124ce118167761152e31aca4e51dccc509a7858b780c468c8b37"
   license "Mozilla Public License Version 2.0"
 
   def install
