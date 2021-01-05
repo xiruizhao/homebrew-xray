@@ -28,7 +28,7 @@ class Xray < Formula
     system "#{bin}/xray", "version"
   end
 
-  plist_options :manual => "xray -config #{HOMEBREW_PREFIX}/etc/xray/config.json"
+  plist_options :manual => "xray run -c #{HOMEBREW_PREFIX}/etc/xray/config.json"
 
   def plist
     <<~EOS
