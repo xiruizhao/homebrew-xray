@@ -5,9 +5,14 @@ class Xray < Formula
   desc "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration."
   homepage "https://t.me/projectxray"
   # download binary from upstream directly
-  url "https://github.com/XTLS/Xray-core/releases/download/v1.2.2/Xray-macos-64.zip"
+  if Hardware::CPU.intel?
+    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.2/Xray-macos-64.zip"
+    sha256 "d2e5b591b5078469ead7f2d022d25d41c7f82fd72c1d0085e37de6517bc70819" # intel
+  else
+    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.2/Xray-macos-arm64-v8a.zip"
+    sha256 "8a905dd91ee9f8247e821d404d99ebb7b169c4f04486988dcac772be961e256c" # apple
+  end
   version "1.2.2"
-  sha256 "d2e5b591b5078469ead7f2d022d25d41c7f82fd72c1d0085e37de6517bc70819"
   license "Mozilla Public License Version 2.0"
 
   def install
