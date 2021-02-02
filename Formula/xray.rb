@@ -6,13 +6,13 @@ class Xray < Formula
   homepage "https://t.me/projectxray"
   # download binary from upstream directly
   if Hardware::CPU.intel?
-    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.2/Xray-macos-64.zip"
-    sha256 "d2e5b591b5078469ead7f2d022d25d41c7f82fd72c1d0085e37de6517bc70819" # intel
+    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.4/Xray-macos-64.zip"
+    sha256 "938c2d12734d2b0289a08e476df9fe913c806e28204c8645da727eb29e7a534e" # intel
   else
-    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.2/Xray-macos-arm64-v8a.zip"
-    sha256 "8a905dd91ee9f8247e821d404d99ebb7b169c4f04486988dcac772be961e256c" # apple
+    url "https://github.com/XTLS/Xray-core/releases/download/v1.2.4/Xray-macos-arm64-v8a.zip"
+    sha256 "d55ebec9e17247ea2e0e32d68a7d7f98e71886ef768fc36873f32e1960c93625" # apple
   end
-  version "1.2.2"
+  version "1.2.4"
   license "Mozilla Public License Version 2.0"
 
   def install
