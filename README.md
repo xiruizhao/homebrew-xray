@@ -3,8 +3,7 @@ A formula distributing pre-build binaries from [Xray-core releases](https://gith
 # Usage
 
 ```
-brew tap xiruizhao/xray
-brew install xray
+brew install xiruizhao/xray/xray
 brew services start xray
 ```
 
@@ -14,6 +13,6 @@ check out example configs at https://github.com/XTLS/Xray-examples and save your
 
 ```
 brew services stop xray
-brew remove xray
+brew uninstall xray
 brew untap xiruizhao/xray
 ```
