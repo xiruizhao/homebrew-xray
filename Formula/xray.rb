@@ -12,10 +12,12 @@ class Xray < Formula
     url "https://github.com/XTLS/Xray-core/releases/download/v1.3.1/Xray-macos-arm64-v8a.zip"
     sha256 "0bb7c60ac3ba00b49be2aced01029587f9d925cd8f7d03d58dfac50257586da4" # apple
   end
-  version "1.3.1"
+  version "1.3.1-deletion"
   license "Mozilla Public License Version 2.0"
 
   def install
+    STDERR.puts '    DEPRECATED: run `brew uninstall xray && brew untap xiruizhao/xray`\n    and use the homebrew-core fomula via `brew install xray` now!'
+    exit(1)
     bin.install "xray"
     pkgshare.install "geoip.dat" # installed to /usr/local/Cellar/xray/{version}/share/xray, symlinked to /usr/local/share/xray
     pkgshare.install "geosite.dat"
